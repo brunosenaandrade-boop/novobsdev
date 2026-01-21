@@ -295,69 +295,94 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Sobre */}
+      {/* Dor - O que você perde */}
       <section id="sobre" className="py-20 bg-gray-900 text-white">
         <div className="container mx-auto px-6">
-          <div className="grid md:grid-cols-2 gap-16 items-center">
-            <div>
-              <h2 className="text-4xl font-bold mb-6">
-                Prazer, sou o Bruno.
-              </h2>
-              <p className="text-gray-300 mb-6 text-lg">
-                Engenheiro de software com paixão por resolver problemas complexos
-                e transformar ideias em produtos que funcionam de verdade.
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6">
+              Enquanto você espera, seu concorrente age.
+            </h2>
+            <p className="text-gray-400 text-xl max-w-3xl mx-auto">
+              Cada dia sem o sistema certo é dinheiro escorrendo pelo ralo.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 mb-16">
+            <div className="bg-red-500/10 border border-red-500/30 rounded-2xl p-8">
+              <div className="text-red-400 text-5xl font-bold mb-4">3h</div>
+              <p className="text-gray-300">
+                É o tempo médio que você <strong>desperdiça por dia</strong> em processos
+                manuais que um software resolveria em segundos.
               </p>
-              <p className="text-gray-300 mb-8">
-                Já ajudei dezenas de empresas e empreendedores a tirarem seus projetos do papel.
-                De startups que precisavam de um MVP rápido a empresas estabelecidas
-                que queriam modernizar seus sistemas.
-              </p>
-              <p className="text-gray-300 mb-8">
-                Meu compromisso é simples: entregar software que funciona,
-                no prazo combinado, com qualidade profissional.
-              </p>
-              <ul className="space-y-4">
-                <li className="flex items-center gap-3">
-                  <CheckCircle2 className="text-green-400" size={24} />
-                  <span>Comunicação direta e transparente</span>
-                </li>
-                <li className="flex items-center gap-3">
-                  <CheckCircle2 className="text-green-400" size={24} />
-                  <span>Código limpo e bem documentado</span>
-                </li>
-                <li className="flex items-center gap-3">
-                  <CheckCircle2 className="text-green-400" size={24} />
-                  <span>Suporte pós-entrega incluso</span>
-                </li>
-                <li className="flex items-center gap-3">
-                  <CheckCircle2 className="text-green-400" size={24} />
-                  <span>Satisfação garantida</span>
-                </li>
-              </ul>
             </div>
-            <div className="bg-gradient-to-br from-blue-600 to-blue-800 p-8 rounded-3xl">
-              <div className="text-center">
-                <div className="flex justify-center mb-4">
-                  <Award className="text-yellow-300" size={48} />
-                </div>
-                <div className="text-6xl font-bold mb-2">100+</div>
-                <div className="text-blue-200 mb-8">Projetos Entregues</div>
-                <div className="grid grid-cols-2 gap-6">
-                  <div className="bg-white/10 rounded-xl p-4">
-                    <Users className="mx-auto text-blue-200 mb-2" size={28} />
-                    <div className="text-3xl font-bold">98%</div>
-                    <div className="text-blue-200 text-sm">
-                      Clientes Satisfeitos
-                    </div>
-                  </div>
-                  <div className="bg-white/10 rounded-xl p-4">
-                    <TrendingUp className="mx-auto text-blue-200 mb-2" size={28} />
-                    <div className="text-3xl font-bold">5+</div>
-                    <div className="text-blue-200 text-sm">Anos de Experiência</div>
-                  </div>
+            <div className="bg-red-500/10 border border-red-500/30 rounded-2xl p-8">
+              <div className="text-red-400 text-5xl font-bold mb-4">23%</div>
+              <p className="text-gray-300">
+                Das vendas são <strong>perdidas</strong> por falta de um sistema
+                que organize seus leads e automatize o follow-up.
+              </p>
+            </div>
+            <div className="bg-red-500/10 border border-red-500/30 rounded-2xl p-8">
+              <div className="text-red-400 text-5xl font-bold mb-4">R$</div>
+              <p className="text-gray-300">
+                Quanto você já <strong>deixou na mesa</strong> por não ter a ferramenta
+                certa para escalar seu negócio?
+              </p>
+            </div>
+          </div>
+
+          {/* Garantia */}
+          <div className="bg-gradient-to-br from-green-600 to-emerald-700 rounded-3xl p-10 md:p-16">
+            <div className="flex flex-col md:flex-row items-center gap-8">
+              <div className="flex-shrink-0">
+                <div className="w-32 h-32 bg-white/20 rounded-full flex items-center justify-center">
+                  <ShieldCheck className="text-white" size={64} />
                 </div>
               </div>
+              <div>
+                <h3 className="text-3xl md:text-4xl font-bold mb-4">
+                  Minha garantia: Ou funciona, ou você não paga.
+                </h3>
+                <p className="text-green-100 text-lg mb-6">
+                  Simples assim. Se na entrega o software não fizer exatamente o que foi combinado,
+                  você recebe <strong>100% do seu dinheiro de volta</strong>. Sem burocracia, sem enrolação.
+                </p>
+                <p className="text-green-200">
+                  Por que eu ofereço isso? Porque eu sei que vou entregar. E você precisa
+                  saber que não tem risco nenhum em começar.
+                </p>
+              </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Escassez */}
+      <section className="py-16 bg-amber-500">
+        <div className="container mx-auto px-6">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-8">
+            <div className="flex items-center gap-6">
+              <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center">
+                <Target className="text-white" size={40} />
+              </div>
+              <div>
+                <h3 className="text-2xl md:text-3xl font-bold text-white">
+                  Aceito apenas 3 projetos por mês.
+                </h3>
+                <p className="text-amber-100 text-lg">
+                  Qualidade exige foco. Prefiro entregar perfeito do que entregar rápido e mal feito.
+                </p>
+              </div>
+            </div>
+            <a
+              href={whatsappLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white text-amber-600 px-8 py-4 rounded-full font-bold text-lg hover:bg-amber-50 transition flex items-center gap-2 whitespace-nowrap"
+            >
+              Garantir Minha Vaga
+              <ArrowRight size={20} />
+            </a>
           </div>
         </div>
       </section>
