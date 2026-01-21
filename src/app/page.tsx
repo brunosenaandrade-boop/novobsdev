@@ -1,18 +1,23 @@
 'use client';
 
 import {
-  Code,
+  Code2,
   Smartphone,
-  Globe,
-  Cpu,
+  Globe2,
+  BrainCircuit,
   MessageCircle,
   Mail,
   MapPin,
-  CheckCircle,
+  CheckCircle2,
   ArrowRight,
-  Zap,
-  Shield,
-  Clock,
+  Rocket,
+  ShieldCheck,
+  Headphones,
+  Sparkles,
+  TrendingUp,
+  Users,
+  Award,
+  Phone,
 } from 'lucide-react';
 
 export default function Home() {
@@ -25,7 +30,8 @@ export default function Home() {
       <header className="fixed top-0 left-0 right-0 z-50 glass">
         <div className="container mx-auto px-6 py-4">
           <nav className="flex items-center justify-between">
-            <div className="text-2xl font-bold text-white">
+            <div className="text-2xl font-bold text-white flex items-center gap-2">
+              <Code2 size={28} className="text-blue-300" />
               BS<span className="text-blue-300">DEVELOPER</span>
             </div>
             <div className="hidden md:flex items-center gap-8">
@@ -54,7 +60,7 @@ export default function Home() {
               rel="noopener noreferrer"
               className="bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded-full font-medium transition flex items-center gap-2"
             >
-              <MessageCircle size={18} />
+              <Phone size={18} />
               WhatsApp
             </a>
           </nav>
@@ -65,6 +71,10 @@ export default function Home() {
       <section className="gradient-bg min-h-screen flex items-center pt-20">
         <div className="container mx-auto px-6">
           <div className="max-w-3xl">
+            <div className="flex items-center gap-2 mb-4">
+              <Sparkles className="text-yellow-300" size={24} />
+              <span className="text-blue-200 font-medium">Potencializado por IA</span>
+            </div>
             <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
               Transformamos suas
               <span className="text-blue-200"> ideias em software</span>
@@ -98,9 +108,9 @@ export default function Home() {
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-6">
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white p-8 rounded-2xl shadow-lg">
-              <div className="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center mb-4">
-                <Zap className="text-blue-600" size={28} />
+            <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition">
+              <div className="w-14 h-14 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center mb-4">
+                <Rocket className="text-white" size={28} />
               </div>
               <h3 className="text-xl font-bold mb-2">Entrega Rápida</h3>
               <p className="text-gray-600">
@@ -108,9 +118,9 @@ export default function Home() {
                 tempo recorde.
               </p>
             </div>
-            <div className="bg-white p-8 rounded-2xl shadow-lg">
-              <div className="w-14 h-14 bg-green-100 rounded-xl flex items-center justify-center mb-4">
-                <Shield className="text-green-600" size={28} />
+            <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition">
+              <div className="w-14 h-14 bg-gradient-to-br from-green-500 to-emerald-600 rounded-xl flex items-center justify-center mb-4">
+                <ShieldCheck className="text-white" size={28} />
               </div>
               <h3 className="text-xl font-bold mb-2">Qualidade Garantida</h3>
               <p className="text-gray-600">
@@ -118,9 +128,9 @@ export default function Home() {
                 software robusto.
               </p>
             </div>
-            <div className="bg-white p-8 rounded-2xl shadow-lg">
-              <div className="w-14 h-14 bg-purple-100 rounded-xl flex items-center justify-center mb-4">
-                <Clock className="text-purple-600" size={28} />
+            <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition">
+              <div className="w-14 h-14 bg-gradient-to-br from-purple-500 to-violet-600 rounded-xl flex items-center justify-center mb-4">
+                <Headphones className="text-white" size={28} />
               </div>
               <h3 className="text-xl font-bold mb-2">Suporte 24/7</h3>
               <p className="text-gray-600">
@@ -145,8 +155,8 @@ export default function Home() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="group p-8 border-2 border-gray-100 rounded-2xl hover:border-blue-500 hover:shadow-xl transition-all">
-              <div className="w-16 h-16 bg-blue-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
-                <Globe className="text-white" size={32} />
+              <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
+                <Globe2 className="text-white" size={32} />
               </div>
               <h3 className="text-xl font-bold mb-3">Sites e Landing Pages</h3>
               <p className="text-gray-600 mb-4">
@@ -156,9 +166,9 @@ export default function Home() {
               <p className="text-blue-600 font-bold">A partir de R$ 2.000</p>
             </div>
 
-            <div className="group p-8 border-2 border-gray-100 rounded-2xl hover:border-blue-500 hover:shadow-xl transition-all">
-              <div className="w-16 h-16 bg-green-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
-                <Code className="text-white" size={32} />
+            <div className="group p-8 border-2 border-gray-100 rounded-2xl hover:border-green-500 hover:shadow-xl transition-all">
+              <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
+                <Code2 className="text-white" size={32} />
               </div>
               <h3 className="text-xl font-bold mb-3">Sistemas Web</h3>
               <p className="text-gray-600 mb-4">
@@ -168,8 +178,8 @@ export default function Home() {
               <p className="text-green-600 font-bold">A partir de R$ 8.000</p>
             </div>
 
-            <div className="group p-8 border-2 border-gray-100 rounded-2xl hover:border-blue-500 hover:shadow-xl transition-all">
-              <div className="w-16 h-16 bg-purple-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
+            <div className="group p-8 border-2 border-gray-100 rounded-2xl hover:border-purple-500 hover:shadow-xl transition-all">
+              <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
                 <Smartphone className="text-white" size={32} />
               </div>
               <h3 className="text-xl font-bold mb-3">Apps Mobile</h3>
@@ -179,9 +189,9 @@ export default function Home() {
               <p className="text-purple-600 font-bold">A partir de R$ 15.000</p>
             </div>
 
-            <div className="group p-8 border-2 border-gray-100 rounded-2xl hover:border-blue-500 hover:shadow-xl transition-all">
-              <div className="w-16 h-16 bg-orange-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
-                <Cpu className="text-white" size={32} />
+            <div className="group p-8 border-2 border-gray-100 rounded-2xl hover:border-orange-500 hover:shadow-xl transition-all">
+              <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-amber-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
+                <BrainCircuit className="text-white" size={32} />
               </div>
               <h3 className="text-xl font-bold mb-3">Automação com IA</h3>
               <p className="text-gray-600 mb-4">
@@ -212,35 +222,40 @@ export default function Home() {
               </p>
               <ul className="space-y-4">
                 <li className="flex items-center gap-3">
-                  <CheckCircle className="text-green-400" size={24} />
+                  <CheckCircle2 className="text-green-400" size={24} />
                   <span>Projetos entregues com excelência</span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <CheckCircle className="text-green-400" size={24} />
+                  <Sparkles className="text-yellow-400" size={24} />
                   <span>Tecnologia de ponta com IA</span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <CheckCircle className="text-green-400" size={24} />
+                  <Headphones className="text-blue-400" size={24} />
                   <span>Suporte contínuo e dedicado</span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <CheckCircle className="text-green-400" size={24} />
+                  <TrendingUp className="text-emerald-400" size={24} />
                   <span>Preços acessíveis para todos</span>
                 </li>
               </ul>
             </div>
             <div className="bg-gradient-to-br from-blue-600 to-blue-800 p-8 rounded-3xl">
               <div className="text-center">
+                <div className="flex justify-center mb-4">
+                  <Award className="text-yellow-300" size={48} />
+                </div>
                 <div className="text-6xl font-bold mb-2">100+</div>
                 <div className="text-blue-200 mb-8">Projetos Entregues</div>
                 <div className="grid grid-cols-2 gap-6">
-                  <div>
+                  <div className="bg-white/10 rounded-xl p-4">
+                    <Users className="mx-auto text-blue-200 mb-2" size={28} />
                     <div className="text-3xl font-bold">98%</div>
                     <div className="text-blue-200 text-sm">
                       Clientes Satisfeitos
                     </div>
                   </div>
-                  <div>
+                  <div className="bg-white/10 rounded-xl p-4">
+                    <Headphones className="mx-auto text-blue-200 mb-2" size={28} />
                     <div className="text-3xl font-bold">24/7</div>
                     <div className="text-blue-200 text-sm">Suporte Ativo</div>
                   </div>
@@ -254,6 +269,7 @@ export default function Home() {
       {/* CTA */}
       <section className="py-20 gradient-bg">
         <div className="container mx-auto px-6 text-center">
+          <Rocket className="mx-auto text-white mb-6" size={48} />
           <h2 className="text-4xl font-bold text-white mb-6">
             Pronto para começar seu projeto?
           </h2>
@@ -288,10 +304,10 @@ export default function Home() {
               href={whatsappLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex flex-col items-center p-8 bg-gray-50 rounded-2xl hover:bg-green-50 transition"
+              className="flex flex-col items-center p-8 bg-gray-50 rounded-2xl hover:bg-green-50 hover:shadow-lg transition"
             >
-              <div className="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mb-4">
-                <MessageCircle className="text-white" size={32} />
+              <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-600 rounded-full flex items-center justify-center mb-4">
+                <Phone className="text-white" size={32} />
               </div>
               <h3 className="font-bold text-lg mb-2">WhatsApp</h3>
               <p className="text-gray-600">(48) 99203-4763</p>
@@ -299,17 +315,17 @@ export default function Home() {
 
             <a
               href="mailto:contato@bsdeveloper.com.br"
-              className="flex flex-col items-center p-8 bg-gray-50 rounded-2xl hover:bg-blue-50 transition"
+              className="flex flex-col items-center p-8 bg-gray-50 rounded-2xl hover:bg-blue-50 hover:shadow-lg transition"
             >
-              <div className="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mb-4">
+              <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full flex items-center justify-center mb-4">
                 <Mail className="text-white" size={32} />
               </div>
               <h3 className="font-bold text-lg mb-2">Email</h3>
               <p className="text-gray-600">contato@bsdeveloper.com.br</p>
             </a>
 
-            <div className="flex flex-col items-center p-8 bg-gray-50 rounded-2xl">
-              <div className="w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center mb-4">
+            <div className="flex flex-col items-center p-8 bg-gray-50 rounded-2xl hover:shadow-lg transition">
+              <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-violet-600 rounded-full flex items-center justify-center mb-4">
                 <MapPin className="text-white" size={32} />
               </div>
               <h3 className="font-bold text-lg mb-2">Endereço</h3>
@@ -327,7 +343,8 @@ export default function Home() {
       <footer className="bg-gray-900 text-white py-12">
         <div className="container mx-auto px-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="text-2xl font-bold mb-4 md:mb-0">
+            <div className="text-2xl font-bold mb-4 md:mb-0 flex items-center gap-2">
+              <Code2 size={28} className="text-blue-400" />
               BS<span className="text-blue-400">DEVELOPER</span>
             </div>
             <div className="text-gray-400 text-center md:text-right">
@@ -345,7 +362,7 @@ export default function Home() {
         href={whatsappLink}
         target="_blank"
         rel="noopener noreferrer"
-        className="fixed bottom-6 right-6 w-16 h-16 bg-green-500 rounded-full flex items-center justify-center shadow-lg hover:bg-green-600 transition hover:scale-110 z-50"
+        className="fixed bottom-6 right-6 w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-600 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition hover:scale-110 z-50"
       >
         <MessageCircle className="text-white" size={32} />
       </a>
