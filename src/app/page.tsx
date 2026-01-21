@@ -331,9 +331,9 @@ export default function Home() {
               BS<span className="text-blue-400">DEVELOPER</span>
             </div>
             <div className="text-gray-400 text-center md:text-right">
-              <p>© 2024 BSDEVELOPER. Todos os direitos reservados.</p>
+              <p>© 2026 BSDEVELOPER. Todos os direitos reservados.</p>
               <p className="text-sm mt-1">
-                Capivari de Baixo - SC | CNPJ: 00.000.000/0001-00
+                Capivari de Baixo - SC | CNPJ: 26.630.862/0001-91
               </p>
             </div>
           </div>
