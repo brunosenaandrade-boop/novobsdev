@@ -17,7 +17,7 @@ import {
 
 export default function Home() {
   const whatsappLink =
-    'https://wa.me/5548999999999?text=Olá!%20Gostaria%20de%20um%20orçamento';
+    'https://wa.me/5548992034763?text=Olá!%20Gostaria%20de%20um%20orçamento';
 
   return (
     <main className="min-h-screen">
@@ -294,7 +294,7 @@ export default function Home() {
                 <MessageCircle className="text-white" size={32} />
               </div>
               <h3 className="font-bold text-lg mb-2">WhatsApp</h3>
-              <p className="text-gray-600">(48) 99999-9999</p>
+              <p className="text-gray-600">(48) 99203-4763</p>
             </a>
 
             <a
